@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+@import "../base/elements.less";
+@import "../base/variables.less";
+
+.search-result{
+  display:block;
+  width:100%;
+  background:#fff;
+  border:1px solid @BorderColor;
+  margin-bottom:30px;
+  padding-bottom:30px;
+  height:auto;
+  padding:20px;
+}
+
+/*Search Card Types*/
+
+.search-result.industry .type{
+  color:#F57423;
+}
+
+.search-result.industry .type-icon{
+  background:transparent url(../imgs/industry-icon.png)top left;
+}
+
+.search-result.issuer .type{
+  color:#955AA5;
+}
+
+.search-result.issuer .search-result-content{
+  border-left:2px solid #955AA5;
+}
+
+.search-result.issuer .type-icon{
+  background:transparent url(../imgs/issuers-icon.png)top left;
+}
+
+.search-result.press-release .type{
+  color:#26B99A;
+}
+
+.search-result.press-release .type-icon{
+  background:transparent url(../imgs/press-release-icon.png)top left;
+}
+
+.search-result.press-release .search-result-content{
+  border-left:2px solid #26B99A;
+}
+
+
+
+
+/*Search Card Header Styles*/
+
+.search-result-header{
+  height:auto;
+  width:100%;
+  // border-bottom:1px solid @BorderColor;
+  padding-bottom:10px;
+}
+
+.type-icon{
+  height:35px;
+  width:35px;
+  float:left;
+}
+
+.search-result-header h1{
+  font-size:20px;
+  margin-top:0px;
+  margin-bottom:5px;
+  @primaryFont;
+  font-weight:400;
+}
+
+.search-result .search-item-info{
+  margin-left:0px;
+  margin-bottom:0px;
+}
+
+.type{
+  display:inline-block;
+  font-weight:400;
+  color:#F57423;
+  padding-bottom:5px;
+}
+
+.search-item-info li{
+  display:inline-block;
+  font-size:12px;
+}
+
+.search-item-info > li:after{
+  content:"|";
+  padding-left:5px;
+}
+
+.search-item-info > li:last-child:after{
+  content:" ";
+  padding-left:0px;
+}
+
+.search-item-info li ul li:after{
+  content:" ";
+  padding-left:0px;
+}
+
+.search-item-info li ul li:last-child:after{
+  content:" ";
+  padding-left:0px;
+}
+
+
+
+.search-result-content{
+  height:auto;
+  width:100%;
+  padding-left:15px;
+}
+
+.search-result-content .excerpt{
+  font-size:14px;
+
+}
+
+
+/*Search Card Footer Styles*/
+
+.search-result-footer{
+  width:100%;
+  padding:15px 20px 0px 0px;
+}
+
+/*Search Card Footer - Action Link Styles*/
+
+.search-result-footer .action-links{
+  margin:0px;
+}
+
+.search-result-footer .action-links .btn-link{
+  font-size:12px;
+  color:#8A8D91;
+  padding:0px 12px;
+  text-align:right;
+}
+
+.btn-link {
+    position:relative;
+}
+
+.btn-link.view-content:before,
+.btn-link.download-content:before,
+.btn-link.save-content:before {
+    content: "";
+    display: inline-block;
+    background-position:0px 0px;
+    background-repeat:no-repeat;
+    position: absolute;
+
+}
+
+.btn-link.view-content:before {
+    background-image: url("../imgs/view-icon.png");
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 14px;
+}
+
+.btn-link.view-content{width:70px;}
+
+.btn-link.download-content{width:90px;}
+
+.btn-link.save-content{width:70px;}
+
+.btn-link.download-content:before {
+    background-image: url("../imgs/download-icon.png");
+    top: 0px;
+    left: 0px;
+    width: 14px;
+    height: 17px;
+}
+
+.btn-link.save-content:before {
+    background-image: url("../imgs/save-icon.png");
+    top: 0px;
+    left: 0px;
+    width: 16px;
+    height: 16px;
+}
+
+
+/*Search Card Footer - Tag Styles*/
+
+.search-result-header .tags{
+  display:inline-block;
+  margin:0px;
+}
+
+.search-result-header .tags li{
+  display:inline-block;
+}
+
+.search-result-header .tags li a{
+  font-size:12px;
+}
+
+.search-result-header .tags .label{
+  font-size:12px;
+  padding:0px;
+  color:#6D6D6D;
+  font-weight:normal;
+}
+
+.search-result-header .tag{
+  display:inline-block;
+  font-size:11px;
+}
+
+.search-result-header .tag:after {
+    content: ",";
+}
+
+.search-result-footer .tag:last-child:after {
+    content: " ";
+}
+
+
+/*SEARCH RESULTS TABLE*/
+.search-result-content .table{
+  margin-bottom:0px;
+  border:0px;
+    border-bottom:1px solid @BorderColor;
+
+}
+
+.search-result-content .table tbody tr td{
+  background:@CardBG;
+  font-size:12px;
+
+}
+
+.search-result-content .table thead tr th{
+  font-size:12px;
+  background:#fff;
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+.filter:hover{
+  text-decoration: none;
+}
+.open-filters{
+  background:transparent url("../imgs/open-icon.png")no-repeat left top;
+  height:20px;
+  width:20px;
+  margin-top:3px;
+}
+
+.close-filters{
+  background:transparent url("../imgs/close-icon.png")no-repeat left 12px;
+  height:20px;
+  width:20px;
+}
+
+a[aria-expanded=true] .open-filters {
+   display: none;
+}
+a[aria-expanded=false] .close-filters {
+   display: none;
+}

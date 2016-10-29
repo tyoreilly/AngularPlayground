@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+@import "../base/elements.less";
+@import "../base/variables.less";
+
+.search-card{
+  display:block;
+  width:100%;
+  background:#fff;
+  border:1px solid @BorderColor;
+  margin-bottom:30px;
+  height:auto;
+}
+
+/*Search Card Types*/
+
+.search-card.industry .type{
+  color:#F57423;
+}
+
+.search-card.industry .type-icon{
+  background:transparent url(../imgs/industry-icon.png)top left;
+}
+
+.search-card.issuer .type{
+  color:#955AA5;
+}
+
+.search-card.issuer .type-icon{
+  background:transparent url(../imgs/issuers-icon.png)top left;
+}
+
+.search-card.press-release .type{
+  color:#26B99A;
+}
+
+.search-card.press-release .type-icon{
+  background:transparent url(../imgs/press-release-icon.png)top left;
+}
+
+
+
+
+/*Search Card Header Styles*/
+
+.search-card-header{
+  height:auto;
+  width:100%;
+  border-bottom:1px solid @BorderColor;
+  padding:20px;
+}
+
+.type-icon{
+  height:35px;
+  width:35px;
+  float:left;
+}
+
+.search-card-header h1{
+  font-size:18px;
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left:50px;
+}
+
+.search-item-info{
+  margin-left:50px;
+  margin-bottom:0px;
+}
+
+.search-item-info .type{
+  font-weight:bold;
+  color:#F57423;
+}
+
+.search-item-info li{
+  display:inline-block;
+  font-size:12px;
+}
+
+.search-item-info li:after{
+  content:"|";
+  padding-left:5px;
+}
+
+.search-item-info li:last-child:after{
+  content:" ";
+  padding-left:0px;
+}
+
+
+
+
+.search-card-content{
+  height:auto;
+  width:100%;
+  padding:20px;
+  background:@CardBG;
+}
+
+
+/*Search Card Footer Styles*/
+
+.search-card-footer{
+  width:100%;
+  border-top:1px solid @BorderColor;
+  padding:10px 20px 10px 20px;
+}
+
+/*Search Card Footer - Action Link Styles*/
+
+.search-card-footer .action-links{
+  margin:0px;
+  float:right;
+}
+
+.search-card-footer .action-links .btn-link{
+  font-size:12px;
+  color:#8A8D91;
+  padding:0px 12px;
+  text-align:right;
+}
+
+.btn-link {
+    position:relative;
+}
+
+.btn-link.view-content:before,
+.btn-link.download-content:before,
+.btn-link.save-content:before {
+    content: "";
+    display: inline-block;
+    background-position:0px 0px;
+    background-repeat:no-repeat;
+    position: absolute;
+
+}
+
+.btn-link.view-content:before {
+    background-image: url("../imgs/view-icon.png");
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 14px;
+}
+
+.btn-link.view-content{width:70px;}
+
+.btn-link.download-content{width:90px;}
+
+.btn-link.save-content{width:70px;}
+
+.btn-link.download-content:before {
+    background-image: url("../imgs/download-icon.png");
+    top: 0px;
+    left: 0px;
+    width: 14px;
+    height: 17px;
+}
+
+.btn-link.save-content:before {
+    background-image: url("../imgs/save-icon.png");
+    top: 0px;
+    left: 0px;
+    width: 16px;
+    height: 16px;
+}
+
+
+/*Search Card Footer - Tag Styles*/
+
+.search-card-footer .tags{
+  display:inline-block;
+  margin:0px;
+  font-size:12px;
+}
+
+.search-card-footer .tags li{
+  display:inline-block;
+  margin-right:15px;
+}
+
+.search-card-footer .tags .label{
+  color:#000;
+  font-size:12px;
+  padding:0px;
+}
+
+.search-card-footer .tag{
+  display:inline-block;
+  position:relative;
+  background:@SoftRed;
+  padding:0px 10px 0px 10px;
+  font-size:11px;
+  height:22px;
+  line-height:21px;
+  color:#fff;
+  .border-radius(4px, 4px, 0px, 0px);
+}
+
+.search-card-footer .tag:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-right: 11px solid @SoftRed;
+    position: absolute;
+    top: 0px;
+    left: -11px;
+}
+
+.search-card-footer .tag:after {
+    content: ".";
+    display: block;
+    color:#fff;
+    font-size:30px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -9px;
+    left: -2px;
+    z-index:50;
+}

@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@import "../base/elements.less";
+@import "../base/variables.less";
+
+.sidebar-panel{
+  display:block;
+  width:100%;
+  background:#fff;
+  margin-bottom:40px;
+  padding:30px;
+  height: calc(100vh);
+  border-right:1px solid @BorderColor;
+}
+
+.sidebar-panel h1{
+  @primaryFont;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom:20px;
+    margin-top:0px;
+    border-bottom:1px solid @BorderColor;
+}
+
+
+.sidebar-panel h3{
+  font-size:16px;
+  border-bottom:1px solid @BorderColor;
+  margin:0px;
+  padding:0px 0px 20px 0px;
+  display:block;
+}
+
+.sidebar-panel h2{
+  font-size:16px;
+  margin:0px;
+  padding:10px 0px 0px 0px;
+  display:block;
+}
+
+.sidebar-panel.list ul li{
+  padding:20px 0px 10px 0px;
+  border-bottom:1px solid @BorderColor;
+}
+
+.sidebar-panel.list ul li:last-child{
+  border-bottom:0px;
+  padding-bottom:0px;
+}
+
+
+
+/* Badges Adjustment */
+
+.badge {
+  color: #8A8D91;
+  font-weight: 400;
+  background-color: #EFF0F2;
+}

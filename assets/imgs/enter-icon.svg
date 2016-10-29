@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>keyboard-return</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Header-Design-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Normal-State---variant-#2" transform="translate(-1640.000000, -137.000000)" fill="#9B9B9B">
+            <g id="SEARCH-BAR" transform="translate(28.000000, 112.000000)">
+                <g id="Search-Bar">
+                    <g id="keyboard-return" transform="translate(1621.000000, 31.000000) scale(-1, 1) translate(-1621.000000, -31.000000) translate(1612.000000, 25.000000)">
+                        <polygon id="Shape" points="16.1052632 1 16.1052632 5 3.6 5 7.01052632 1.4 5.68421053 0 0 6 5.68421053 12 7.01052632 10.6 3.6 7 18 7 18 1"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
